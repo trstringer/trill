@@ -1,6 +1,6 @@
 # Trill
 
-*Easily and quickly tweet long tweets with flexibility*
+*Easily and quickly tweet long and short tweets with flexibility*
 
 ## Install
 
