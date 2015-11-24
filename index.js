@@ -9,7 +9,7 @@ function sendTweets(client, tweets, callback, index) {
     if (tweets[index] !== undefined) {
         client.post('statuses/update', {status: tweets[index]}, function (err, tweet, res) {
             if (err) {
-                throw err;
+                callback(err);
             }
             else {
                 index++;
