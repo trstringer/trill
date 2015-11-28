@@ -24,7 +24,7 @@ function sendTweets(client, tweets, callback, index) {
 
 function tweetTweet(auth, tweet, callback) {
     if (!auth.consumer_key || !auth.consumer_secret || !auth.access_token_key || !auth.access_token_secret) {
-        throw { name: 'TweetAuthError', message: 'Incomplete auth information supplied' };
+        callback({ name: 'TweetAuthError', message: 'Incomplete auth information supplied' });
     }
     
     var brokenTweetMessages = tweetify(tweet);
